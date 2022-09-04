@@ -2,10 +2,13 @@ import "./styles.css";
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import "mapbox-gl/dist/mapbox-gl.css";
+import db from "./Firebase"; //we are importting the db which acts a reference to the database which we are currently using in our firebase application
+import {collection,getDocs,addDoc} from "firebase/firestore" // The data inside the firebase firestore is nuch more similar to mongoDB where there are collection of objects and each object has their own attributes.
+// The objects here are called as docs.
 let a = 0;
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYXJ5YW42NzIwMDIiLCJhIjoiY2w2dHF4NThiMWRxcTNmbW1wMjloZHdlcyJ9.qJfe1mlh5Q-ycAw4bQgL-A";
-export default function BookNow() {
+export default function BookNow(props) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const mapmarker = useRef(0);
@@ -14,7 +17,13 @@ export default function BookNow() {
   const [zoom, setZoom] = useState(9);
   const [datefrom, setdatefrom] = useState(null);
   const [dateto, setdateto] = useState(null);
+  const [datef,setdatef] = useState(0);
+  const [datet,setdatet] = useState(0);
   const datemap = useRef([0,31,60,91,121,152,182,213,243,274,304,335]);
+  const addUser = async () => {
+    const collecionref = collection(db,"users");
+    await addDoc(collecionref,{email:"abc@gmail.com",password:"abc",enddate:datet,startdata:datef,latitude:lat,longitude:lng,cost:(dateto-datefrom)*5000});
+  }
   useEffect(() => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
@@ -46,8 +55,13 @@ export default function BookNow() {
     <div>
       <div ref={mapContainer} className="map-container" />
       <div id = "input-data">
+      <form onSubmit = {(e) => {
+        e.preventDefault();
+        addUser();
+      }}>
       <label to="dateinfo">From : </label>
       <input
+        required
         id="dateinfo"
         type="date"
         onChange={() => {
@@ -57,11 +71,13 @@ export default function BookNow() {
               datemap.current[Number(a.value.substr(5, 2)) - 1]
           );
             console.log(a.value);
+            setdatef(a.value);
         }}
       ></input>
       <br />
       <label to="noofdays">To : </label>
       <input
+        reqiured
         id="noofdays"
         type="date"
         onChange={() => {
@@ -70,6 +86,7 @@ export default function BookNow() {
             Number(a.value.substr(8, 2)) +
               datemap.current[Number(a.value.substr(5, 2)) - 1]
           );
+          setdatet(a.value);
           console.log(a.value);
         }}
       ></input>
@@ -81,8 +98,9 @@ export default function BookNow() {
       <br />
       <div>Total Cost     {(dateto-datefrom)*5000}</div>
       <br />
+      <input type="submit" id = "confirmbtn" value = "CONFIRM"/>
+      </form>
       </div>
-      <button id = "confirmbtn">CONFIRM</button>
     </div>
   );
 }

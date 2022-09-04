@@ -1,0 +1,20 @@
+CRUD Operation in firebase :
+First basic step is to import firestore is Firebase initialize file and then create a db using firestore function.
+This db created allows access to the database can be said that it points to the database.
+import { getFirestore } from "firebase/firestore";
+const db = getFirestore()
+export db;
+1)Writing :
+->In order to create a document in the firebase collection we have to first import {collection} from "firebase/firestore"
+which will provide access to the collections present in your database.
+->Also we have to use {addDoc} to add document to the collections.
+->Here the addDoc method takes two arguments one is reference to the collection in which the data is to be added and second the data object to be added
+
+eg : 
+in this project =>
+const collectionref = collection(db,"users");
+addDoc(collectionref,{});
+
+2)Reading:
+->Here we have {getDocs} method which will give the docs present in the collecion provided as the input in the function.
+getDocs(collectionref).then(data => data.JSON()).then()

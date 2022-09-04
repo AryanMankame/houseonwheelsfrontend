@@ -24,21 +24,21 @@ function Contact() {
             <div>
                 We Rent a HouseOnWheels which has a load of facilities.You can book one and it wil get dilevered at your desired location.
             </div>
-            <div id = "location">
+            <div class = "detaildoit" id = "location">
                 <img src = "https://cdn-icons-png.flaticon.com/512/1255/1255406.png" alt = "pin"></img>
                 <div>Mumbai,Maharashtra,India</div>
             </div>
-            <div id = "phone">
-                <img src = "" alt = "phone"></img>
+            <div class = "detaildoit" id = "phone">
+                <div>&#128222;</div>
                 <div>+917387159818</div>
             </div>
-            <div>
-                <img src = "" alt = "phone"></img>
+            <div class = "detaildoit">
+                <div>&#128231;</div>
                 <div>aryan672002@gmail.com</div>
             </div>
-            <div>
-                <img src = "" alt = "linkedin"></img>
-                <img src = "" alt = "instagram"></img>
+            <div class = "detaildoit">
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS94lss-M8YBbptTJJ89KHyahVOWkp-uBsDGhUxr6smkA&s" alt = "linkedin"></img>
+                <img src = "https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?w=740&t=st=1662292952~exp=1662293552~hmac=5dd9f8fc72a58fc9b2556481e782180bcfbd9d29992644baae1cd9f4478962bb" alt = "instagram"></img>
             </div>
         </div>
         <div id = "second">
@@ -117,6 +117,10 @@ const Body = styled.div`
                 }
             }
             background: linear-gradient(to right, #b24592, #f15f79);
+        }
+        .detaildoit{
+            display:flex;
+            flex-direction:row;
         }
     }
     #lower{
