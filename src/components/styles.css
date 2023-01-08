@@ -1,27 +1,49 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  .map-container {
-    height: 90vh;
-  }
-  #confirmbtn{
-    font-size:20px;
-    width:50vw;
-    height:40px;
-    background-color:lightgreen;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:1pc;
-    color:white;
-    border-color:white;
-  }
-  #confirmbtn:hover{
-    transform:scale(1.1);
-    transition:all .6s;
-  }
-  #input-data{
-    margin-left:30vw;
-    font-size:20px;
-    font-family: 'FiraCode';
-  }
+  font-family: sans-serif;
+  text-align: center;
+}
+.map-container {
+  height: 100vh;
+  width:60vw;
+}
+#confirmbtn{
+  font-size:20px;
+  width:80%;
+  height:40px;
+  background-color:lightgreen;
+  margin-left:10%;
+  margin-bottom:1pc;
+  color:white;
+  border-color:white;
+}
+#confirmbtn:hover{
+  transform:scale(1.1);
+  transition:all .6s;
+  
+}
+#input-data{
+  font-size:20px;
+  width:40vw;
+  font-family: 'FiraCode';
+}
+#dateinfo{
+  margin-left:10%;
+  margin-bottom:2%;
+  margin-top:5%;
+}
+#noofdays{
+  margin-left:13%;
+}
+
+#total{
+  margin-left:10%;
+  display:flex;
+  flex-direction:row;
+  font-weight:bold;
+}
+#cost{
+  margin-left:13%;
+}
+#congrats{
+  margin-left:10%;
+}
