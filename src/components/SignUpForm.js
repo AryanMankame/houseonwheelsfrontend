@@ -9,13 +9,14 @@ function SignUpForm() {
   const navigate = useNavigate();
   const checkuser = (e) => {
     e.preventDefault();
+    navigate("/home");
     const data = {
       username,
       email,
       password
     }
     console.log(data);
-    fetch("https://aryan672002.pythonanywhere.com/user/register",{
+    fetch("https://houseonwheelsbackend.temporaryemail3.repl.co/auth/register",{
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',

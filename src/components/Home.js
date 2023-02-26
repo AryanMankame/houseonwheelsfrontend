@@ -233,10 +233,12 @@ const Right = styled.div`
 const ImageSlider = styled.div`
   z-index:-1;
   .slider{
+    width:100vw;
     z-index:4;
     height:100vh;
     img{
       height:100vh;
+      width:100% !important;
       object-fit:cover;
     }
   }
