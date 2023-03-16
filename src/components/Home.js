@@ -44,7 +44,7 @@ function Home() {
     </Carousel>
     <Info id = "about">
       <h1>About</h1>
-      <Left>
+      <Left id='left'>
         <div
         data-aos="fade-up"
         data-aos-offset="10"
@@ -154,8 +154,29 @@ h1{
     cursor:pointer;
     font-family: 'Helvetica Neue'
   }
+  @media (max-width:500px){
+    h1{
+      display:none;
+    }
+    img{
+      height:30vh !important;
+      width:60vw !important;
+    }
+    width:80% !important;
+  }
 `;
 const Left = styled.div`
+  @media (max-width:500px){
+    // h1{
+    //   display:none;
+    // }
+    // img{
+    //   height:30vh !important;
+    //   width:60vw !important;
+    // }
+    background-color:grey;
+    margin:0px;
+  }
   width:50wv;
   display:flex;
   flex-direction:column;
@@ -181,6 +202,10 @@ const Left = styled.div`
   }
 `;
 const Right = styled.div`
+  @media (max-width:500px){
+    height:20vh !important;
+    background-color:orange;
+  }
   width:50vw;
   display:flex;
   flex-direction:column;
@@ -231,6 +256,18 @@ const Right = styled.div`
   }
 `;
 const ImageSlider = styled.div`
+  @media (max-width:500px){
+    .slider{
+      // display:none;
+    }
+    img{
+      display:none;
+    }
+    button{
+      display:none;
+    }
+    overflow-x:hidden;
+  }
   z-index:-1;
   .slider{
     width:100vw;

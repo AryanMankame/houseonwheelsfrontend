@@ -31,6 +31,10 @@ function SignInForm() {
   }
   return (
     <div className="appAside" >
+          <div className='quotes'>
+             HouseOnWheels
+          </div>
+          {/* <div>loginlogo</div> */}
           <div className="appForm">
             <div className="pageSwitcher">
               <NavLink

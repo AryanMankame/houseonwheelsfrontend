@@ -1,0 +1,12 @@
+The HouseOnWheels Rental Website is a platform that allows users to rent a variety of mobile homes and caravaan for their travel adventures. The website offers a user-friendly interface with key features including user authentication, a landing page, booking system, location selection on Google Maps, and a location search bar with location predictions.
+The website is built using the React.js framework for the frontend and Django for the backend. 
+The user authentication feature ensures that only registered users can access the rental services offered by the website. This helps to protect the platform and provides users with a secure environment for their transactions. Users can easily create an account and log in using their credentials.
+The landing page is designed to provide users with a quick overview of the website's services and features. It contains a search bar where users can enter their desired location and travel dates to start browsing for available rental options. The website offers a wide range of mobile homes and caravaan to choose from, including luxury motorhomes, campervans, and pop-up trailers.
+
+The booking system is a key feature of the website, allowing users to book their chosen rental with ease. Once users have selected their preferred rental, they can proceed to make a reservation by entering their personal details and payment information. The booking system is fully automated, reducing the risk of human error and ensuring a seamless experience for users.
+
+Location selection on Google Maps is another key feature of the HouseOnWheels Rental Website. Users can easily select their desired location by using the interactive map, which displays all available rental options in the selected area. The map also provides information on local amenities and attractions, helping users to plan their trips more effectively.
+
+Finally, the location search bar with location predictions is a useful tool that allows users to quickly find their desired location. As users start typing in the search bar, the website provides location predictions based on their input, making it easy to find the right location without having to type out the full name.
+
+Overall, the HouseOnWheels Rental Website is a user-friendly platform that offers a range of features designed to help users find and book their perfect mobile home or RV. With its secure user authentication, easy-to-use booking system, interactive map, and location search bar, this website is the perfect tool for anyone looking to embark on a mobile home adventure.
