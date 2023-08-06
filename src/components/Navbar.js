@@ -15,10 +15,10 @@ const Navbar = () => {
             <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onClick={() => {closeNav();}}>&times;</a>
             <div class="overlay-content">
-            <a onClick={() => {closeNav(); navigate('/home')}} href="">Home</a>
-            <a onClick={() => {closeNav(); navigate('/book')}} href="">Book Now</a>
-            <a onClick={() => {closeNav(); navigate('/list')}} href="">Cart</a>
-            <a onClick={() => {closeNav(); navigate('/my-rides')}} href="">My Rides</a>
+            <div className = "alink" onClick={() => {closeNav(); navigate('/home')}} >Home</div>
+            <div className = "alink" onClick={() => {closeNav(); navigate('/book')}} >Book Now</div>
+            <div className = "alink" onClick={() => {closeNav(); navigate('/list')}} >Cart</div>
+            <div className = "alink" onClick={() => {closeNav(); navigate('/my-rides')}} >My Rides</div>
             </div>
             </div>
             <div>
@@ -47,6 +47,12 @@ const Body = styled.div`
         width:80px;
         height:80px;
         
+    }
+    .alink{
+        font-size:24px; color:white; font-family:Firacode Mono; margin-bottom:2vh;
+        &:hover{
+            cursor:pointer;
+        }
     }
 `;
 export default Navbar;
