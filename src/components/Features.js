@@ -43,7 +43,6 @@ function Features() {
   )
 }
 const Body = styled.div`
-    height:100vh;
     width:100vw;
     padding-top:2pc;
     background-color:hsl(192, 24%, 96%);
@@ -63,6 +62,9 @@ const Body = styled.div`
         border-radius:1pc;
         color:hsl(9, 100%, 62%);
         background:hsla(9, 100%, 62%, 0.1);
+        @media (max-width: 500px) {
+            width:30vw;
+        }
     }
 `;
 const Cards = styled.div`

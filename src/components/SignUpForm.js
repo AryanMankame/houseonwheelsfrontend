@@ -9,7 +9,6 @@ function SignUpForm() {
   const navigate = useNavigate();
   const checkuser = (e) => {
     e.preventDefault();
-    navigate("/home");
     const data = {
       username,
       email,
@@ -34,6 +33,9 @@ function SignUpForm() {
   }
   return (
     <div className="appAside" >
+          <div className='quotes'>
+             HouseOnWheels
+          </div>
           <div className="appForm">
             <div className="pageSwitcher">
               <NavLink
@@ -45,7 +47,7 @@ function SignUpForm() {
               </NavLink>
               <NavLink
                 exact
-                to="/"
+                to="/sign-in"
                 activeClassName="pageSwitcherItem-active"
                 className="pageSwitcherItem"
               >

@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
+    const navigate = useNavigate();
     const openNav = () => {
         document.getElementById("myNav").style.height = "100%";
     }
@@ -13,10 +15,10 @@ const Navbar = () => {
             <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onClick={() => {closeNav();}}>&times;</a>
             <div class="overlay-content">
-            <a onClick={() => {closeNav();}} href="#about">About</a>
-            <a onClick={() => {closeNav();}} href="#features">Features</a>
-            <a onClick={() => {closeNav();}} href="#contact">Book Now</a>
-            <a onClick={() => {closeNav();}} href="#contact">Contact</a>
+            <a onClick={() => {closeNav();}} href="/home">Home</a>
+            <a onClick={() => {closeNav();}} href="/book">Book Now</a>
+            <a onClick={() => {closeNav();}} href="/list">Cart</a>
+            <a onClick={() => {closeNav();}} href="/my-rides">My Rides</a>
             </div>
             </div>
             <div>

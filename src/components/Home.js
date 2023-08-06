@@ -44,8 +44,9 @@ function Home() {
     </Carousel>
     <Info id = "about">
       <h1>About</h1>
+      <img id = "info-res" src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img> 
       <Left id='left'>
-        <div
+        <div id = "q1"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="50"
@@ -55,7 +56,7 @@ function Home() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center" 
         className = "question">What is house on wheels ?</div>
-        <div 
+        <div id = "ans1"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="50"
@@ -65,7 +66,7 @@ function Home() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         className = "answer">An Integrated vehicle which provides accomodation and facilitates travel to places during any time of the day and during all climatic conditions.</div>
-        <div 
+        <div id = "q2"
         data-aos="fade-up"
         data-aos-offset="0"
         data-aos-delay="50"
@@ -75,7 +76,7 @@ function Home() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         className = "question">Why should I rent a house on wheels?</div>
-        <div 
+        <div id = "ans2"
         data-aos="fade-up"
         data-aos-offset="0"
         data-aos-delay="50"
@@ -109,7 +110,7 @@ function Home() {
         data-aos-anchor-placement="top-center">
         <img src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img>
         </div>
-        <div 
+        <div id = "q3"
         data-aos="fade-up"
         data-aos-offset="-200"
         data-aos-delay="50"
@@ -119,7 +120,7 @@ function Home() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         className = "question">How to rent a house on wheels?</div>
-        <div 
+        <div id = "ans3"
         data-aos="fade-up"
         data-aos-offset="-200"
         data-aos-delay="50"
@@ -130,7 +131,7 @@ function Home() {
         data-aos-anchor-placement="top-center"
         className = "answer">Simply click on the book now button and choose the location and duration you want and it will be delievered to the desired location.</div>
         <div id = "bookButtons">
-        <Link to ="/book" ><button id = "bookNow">BOOK NOW</button></Link>
+        <Link to ="/list" ><button id = "bookNow">BOOK NOW</button></Link>
         <button id = "knowMore">KNOW MORE</button>
         </div>
       </Right>
@@ -154,15 +155,34 @@ h1{
     cursor:pointer;
     font-family: 'Helvetica Neue'
   }
+  #info-res{
+    display:none;
+  }
   @media (max-width:500px){
+    display:flex;
+    flex-direction:column;
+    overflow-x:hidden;
+    #q1,#ans1,#q2,#ans2{
+      text-align:center;
+      padding:0px;
+      margin-left:6vw;
+    }
     h1{
       display:none;
     }
     img{
-      height:30vh !important;
-      width:60vw !important;
+      display:none;
     }
-    width:80% !important;
+    #info-res{
+      display:fixed !important;
+      height:30vh;
+      width:100vw;
+    }
+    #bookButtons{
+      margin-bottom:20px;
+    }
+    // width:80% !important;
+    // display:none;
   }
 `;
 const Left = styled.div`
@@ -170,11 +190,6 @@ const Left = styled.div`
     // h1{
     //   display:none;
     // }
-    // img{
-    //   height:30vh !important;
-    //   width:60vw !important;
-    // }
-    background-color:grey;
     margin:0px;
   }
   width:50wv;
@@ -203,8 +218,9 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   @media (max-width:500px){
-    height:20vh !important;
-    background-color:orange;
+    #q3,#ans3{
+      display:none;
+    }
   }
   width:50vw;
   display:flex;
@@ -259,14 +275,15 @@ const ImageSlider = styled.div`
   @media (max-width:500px){
     .slider{
       // display:none;
-    }
-    img{
-      display:none;
-    }
-    button{
-      display:none;
+      height:50vh !important;
+      img{
+        height:50vh !important;
+        width:100vw !important;
+        object-fit:cover;
+      }
     }
     overflow-x:hidden;
+    // height:50vh;
   }
   z-index:-1;
   .slider{

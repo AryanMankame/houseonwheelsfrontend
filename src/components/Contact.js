@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
-
+import { useNavigate } from 'react-router-dom';
 function Contact() {
+  const navigate = useNavigate();
   return (
     <Body id = "contact">
     <div id = "upper">
@@ -11,7 +12,9 @@ function Contact() {
                 <h4>We can provide a wonderful travel experience</h4>
             </div>
             <div id = "right">
-                <button id="explore">EXPLORE &#x2192;</button>
+                <button id="explore" onClick={() => {
+                    navigate('/list')
+                }}>EXPLORE &#x2192;</button>
             </div>
         </div>
     </div>
@@ -19,7 +22,7 @@ function Contact() {
         <div id = "first">
             <div id = "logoImg">
                 <img src = "https://cdn-icons-png.flaticon.com/128/1113/1113375.png?ga=GA1.2.58926140.1653147197" alt = "logo"></img>
-                <div>H.O.W</div>
+                <div style={{marginTop:"10px"}}>H.O.W</div>
             </div>
             <div>
                 We Rent a HouseOnWheels which has a load of facilities.You can book one and it wil get dilevered at your desired location.
@@ -81,6 +84,22 @@ const Body = styled.div`
         height:20vh;
         background-color:hsl(192, 24%, 96%);
         #overlap{
+            @media (max-width:500px){
+                height:10vh;
+                transform:translate(-20px,9pc);
+                width:90vw !important;
+                #left{
+                    h2,h4{
+                        font-size:12px !important;
+                    }
+                    margin-left:4vw !important;
+                }
+                #right{
+                    button{
+                        width:10vw;
+                    }
+                }
+            }
             z-index:10;
             transform:translateY(5pc);
             display:flex;
@@ -105,6 +124,16 @@ const Body = styled.div`
                 h4{
                     font-size:1pc;
                 }
+                @media (max-width:500px){ 
+                    h2,h4{
+                        font-size:12px !important;
+                        width:40vw;
+                    }
+                    h4{
+                        margin-left:3vw !important;
+                    }
+                    margin-left:1vw !important;
+                }
             }
             #right{
                 width:40vw;
@@ -116,6 +145,12 @@ const Body = styled.div`
                     margin-left:20vw;
                     margin-top:2pc;
                 }
+                @media (max-width:500px) {
+                    button{
+                        width:30vw;
+                        transform:translate(-55px,-10px);
+                    }
+                }
             }
             background: linear-gradient(to right, #b24592, #f15f79);
         }
@@ -125,10 +160,27 @@ const Body = styled.div`
         z-index:2;
         height:80vh;
         width:100vw;
+        @media (max-width:500px){
+            font-size:13px;
+            .title{
+                font-size: 20px !important;
+            }
+            #first{
+                width:35vw !important;
+            }
+            #second{
+                margin-left:25vw !important; margin-top:2vh;
+            }
+        }
+        @media (min-width:500px){
+            #lower{
+                padding-left:10vw;
+            }
+        }
         display:flex;
-        padding:3pc;
+        padding-left:10vw;
         flex-direction:row;
-        padding-top:10pc;
+        padding-top:25vh;
         color:white;
         background-color:hsl(227, 29%, 13%);
         font-family:Arial;
@@ -161,8 +213,9 @@ const Body = styled.div`
         }
         #first{
             img{
-                height:2pc;
-                width:2pc;
+                margin-top:10px;
+                height:25px;
+                width:25px;
             }
             width:25vw;
             #logoImg{

@@ -1,12 +1,12 @@
-// Import the functions you need from the SDKs you need
+// // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getAuth,GoogleAuthProvider} from "firebase/auth";
+import {getAuth,signInWithPopup,GoogleAuthProvider,createUserWithEmailAndPassword} from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// // Your web app's Firebase configuration
+// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyB5rwgOK4RW43nQZHdhKPWIEp1ZvOORJq4",
   authDomain: "houseonwheels.firebaseapp.com",
@@ -17,10 +17,10 @@ const firebaseConfig = {
   measurementId: "G-DDPLJGVV2X"
 };
 
-// Initialize Firebase
+// // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
-export {auth,provider};
+export {auth,provider,signInWithPopup,createUserWithEmailAndPassword};
 export default db;
