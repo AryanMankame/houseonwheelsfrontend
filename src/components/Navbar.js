@@ -15,10 +15,10 @@ const Navbar = () => {
             <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onClick={() => {closeNav();}}>&times;</a>
             <div class="overlay-content">
-            <a onClick={() => {closeNav();}} href="/home">Home</a>
-            <a onClick={() => {closeNav();}} href="/book">Book Now</a>
-            <a onClick={() => {closeNav();}} href="/list">Cart</a>
-            <a onClick={() => {closeNav();}} href="/my-rides">My Rides</a>
+            <a onClick={() => {closeNav(); navigate('/home')}} href="">Home</a>
+            <a onClick={() => {closeNav(); navigate('/book')}} href="">Book Now</a>
+            <a onClick={() => {closeNav(); navigate('/list')}} href="">Cart</a>
+            <a onClick={() => {closeNav(); navigate('/my-rides')}} href="">My Rides</a>
             </div>
             </div>
             <div>
