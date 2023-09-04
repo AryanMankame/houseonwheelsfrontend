@@ -9,23 +9,20 @@ Auth Page :
 
 
 Landing Page:
-![Screenshot 2023-09-04 235443](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/727f7176-752b-42ce-b0d9-0aed41a56b8f)
-![Screenshot 2023-09-04 235437](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/f56859ca-3830-4572-ab52-9dcc81ae0a9b)
-![Screenshot 2023-09-04 235428](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/cfb86acb-a4c9-4c56-8543-74d0c9f8e009)
-![Screenshot 2023-09-04 235418](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/c7b2756d-b7bf-4180-83b3-b14f35329174)
 ![Screenshot 2023-09-04 235411](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/9527213e-10e8-43a6-b2a3-c192d3c0a7e7)
+![Screenshot 2023-09-04 235418](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/c7b2756d-b7bf-4180-83b3-b14f35329174)
+![Screenshot 2023-09-04 235443](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/727f7176-752b-42ce-b0d9-0aed41a56b8f)
+![Screenshot 2023-09-04 235428](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/cfb86acb-a4c9-4c56-8543-74d0c9f8e009)
+![Screenshot 2023-09-04 235437](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/f56859ca-3830-4572-ab52-9dcc81ae0a9b)
 
 Cart :
 ![Screenshot 2023-09-05 000053](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/df65a670-2c3c-48db-9c5f-b90c1bd0c0f4)
 ![Screenshot 2023-09-05 000033](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/048ec257-f9ac-4b32-9082-271a2bccec94)
-![Screenshot 2023-09-05 000117](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/e0d44ce5-d9f9-4716-82b5-6877057b5c9b)
 
 Booking Page:
-![Screenshot 2023-09-05 000255](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/e2aa95e2-1163-4963-b8d0-a9b6c065eedf)
 ![Screenshot 2023-09-05 000209](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/43211669-4a05-42e4-8676-fffb468d7145)
 
 MyRides:
-![Screenshot 2023-09-05 000438](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/6cb3c191-708f-4240-897b-44779efefc23)
 ![Screenshot 2023-09-05 000410](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/7fe194b1-bfe0-44dc-be97-11e9901b8441)
 
 
