@@ -6,14 +6,9 @@ https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/f9962620-0
 
 Auth Page : 
 ![Screenshot 2023-09-04 235209](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/4e758726-7cea-4370-aadc-a933bd0fd416)
-![Screenshot 2023-09-04 235259](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/d1bdc73b-43b4-4001-9025-51c6a4ce7d2c)
 
 
 Landing Page:
-![Screenshot 2023-09-04 235944](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/bb4d31ba-dc6d-4b57-9100-77aaa27f34aa)
-![Screenshot 2023-09-04 235929](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/a414b5dd-a12b-490f-b2a8-456f32bbcc6e)
-![Screenshot 2023-09-04 235910](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/16f93e81-262f-4c24-94b8-7c3c546abb0f)
-![Screenshot 2023-09-04 235837](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/235f806a-9632-4f3d-8684-a607c97afe03)
 ![Screenshot 2023-09-04 235443](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/727f7176-752b-42ce-b0d9-0aed41a56b8f)
 ![Screenshot 2023-09-04 235437](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/f56859ca-3830-4572-ab52-9dcc81ae0a9b)
 ![Screenshot 2023-09-04 235428](https://github.com/AryanMankame/houseonwheelsfrontend/assets/87220756/cfb86acb-a4c9-4c56-8543-74d0c9f8e009)
