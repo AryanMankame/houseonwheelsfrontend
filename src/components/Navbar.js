@@ -22,9 +22,10 @@ const Navbar = () => {
             </div>
             </div>
             <div>
-            <img src = "https://cdn-icons-png.flaticon.com/128/1113/1113375.png?ga=GA1.2.58926140.1653147197"></img>
+            <img id = "logo-img" src = "https://cdn-icons-png.flaticon.com/128/1113/1113375.png?ga=GA1.2.58926140.1653147197"
+            onClick={() => {navigate('/home')}}></img>
             </div>
-            <span onClick={() => {console.log('pressed'); openNav();}}>&#9776;</span>
+            <span id = "nav-3bar" onClick={() => {console.log('pressed'); openNav();}}>&#9776;</span>
         </Body>
     );
 }

@@ -28,7 +28,7 @@ function Sign_In() {
         <article class="form-container">
         <div class="intro">
         <h1>Welcome Back</h1>
-        <p>Welcome Back, Please Enter Your details</p>
+        <p>Please Enter Your details</p>
         </div>
 
         <form onsubmit="return false;" class="form">
@@ -104,7 +104,7 @@ function Sign_In() {
 
         <article class="outro">
         <div class="ending">
-        <p>Or Continue With</p>
+        <p class = "register-title">Or Continue With</p>
         </div>
 
         <div class="socials">
@@ -112,12 +112,12 @@ function Sign_In() {
         <p class="social-btn" href="" id="a-btn"><p>Apple</p></p>
         <p class="social-btn" href="" id="fb-btn"><p>Facebook</p></p>
         </div>
-        {currPage === "login" ? <div id = "register-title">Not Yet Registered ? <a href = "" onClick={(e) => {
+        {currPage === "login" ? <div class = "register-title">Not Yet Registered ? <a href = "" onClick={(e) => {
             e.preventDefault();
             setcurrPage("register");
         }}>Register Now</a></div>
         : <></> }
-        {currPage === "register" ? <div id = "register-title">Already Registered ? <a href = "" onClick={(e) => {
+        {currPage === "register" ? <div class = "register-title">Already Registered ? <a href = "" onClick={(e) => {
             e.preventDefault();
             setcurrPage("login");
         }}>Sign In</a></div>

@@ -22,7 +22,7 @@ function Contact() {
         <div id = "first">
             <div id = "logoImg">
                 <img src = "https://cdn-icons-png.flaticon.com/128/1113/1113375.png?ga=GA1.2.58926140.1653147197" alt = "logo"></img>
-                <div style={{marginTop:"10px"}}>H.O.W</div>
+                <div style={{marginTop:"10px",fontSize: 24}}>H.O.W</div>
             </div>
             <div>
                 We Rent a HouseOnWheels which has a load of facilities.You can book one and it wil get dilevered at your desired location.
@@ -139,6 +139,9 @@ const Body = styled.div`
                 width:40vw;
                 display:flex:
                 flex-direction:row;
+                align-items:center;
+                justify-content: center;
+                margin-top:5px;
                 button{
                     width:15pc;
                     height:3pc;
@@ -178,8 +181,9 @@ const Body = styled.div`
             }
         }
         display:flex;
-        padding-left:10vw;
+        // padding-left:10vw;
         flex-direction:row;
+        justify-content: center;
         padding-top:25vh;
         color:white;
         background-color:hsl(227, 29%, 13%);
@@ -217,7 +221,7 @@ const Body = styled.div`
                 height:25px;
                 width:25px;
             }
-            width:25vw;
+            width:15vw;
             #logoImg{
                 display:flex;
                 flex-direction:row;

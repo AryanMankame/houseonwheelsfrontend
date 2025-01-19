@@ -43,10 +43,49 @@ function Home() {
       </Carousel.Item>
     </Carousel>
     <Info id = "about">
-      <h1>About</h1>
+      <div className='about-head'>
+          <span>A</span>
+          <span>B</span>
+          <span>O</span>
+          <span>U</span>
+          <span>T</span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span>U</span>
+          <span>S</span>
+      </div>
       <img id = "info-res" src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img> 
       <Left id='left'>
-        <div id = "q1"
+       
+        <div
+        data-aos="fade-right"
+        data-aos-offset="-100"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        >
+          {/* <img src = "https://media.zigcdn.com/media/photogallery/2013/Feb/004_300x225.jpg" alt = "image"></img> */}
+          <img src = "home-car1.jpg" alt = "image"></img>
+        </div>
+        <div data-aos="fade-left"
+        data-aos-offset="0"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
+        {/* <img src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img> */}
+          <img id = "about-img2" src = "home-car2.jpeg" alt = "image"></img>
+        </div>
+      </Left>
+      <Right>
+      <div id = "q1"
         data-aos="fade-up"
         data-aos-offset="10"
         data-aos-delay="50"
@@ -86,30 +125,6 @@ function Home() {
         data-aos-once="false"
         data-aos-anchor-placement="top-center"
         className = "answer">It provides you the accessibility to reach any destination you want without having the need to book any cab or taxi and allowing travel even during any climatic condition.</div>
-        <div
-        data-aos="fade-right"
-        data-aos-offset="-100"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-        >
-          <img src = "https://media.zigcdn.com/media/photogallery/2013/Feb/004_300x225.jpg" alt = "image"></img>
-        </div>
-      </Left>
-      <Right>
-        <div data-aos="fade-left"
-        data-aos-offset="0"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center">
-        <img src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img>
-        </div>
         <div id = "q3"
         data-aos="fade-up"
         data-aos-offset="-200"
@@ -148,6 +163,23 @@ h1{
   background-color:red;
   color:white;
 }
+  .about-head {
+    display : flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10vw;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    font-weight: bold;
+  }
+  .about-head > span {
+    margin-bottom : 5px; font-size:42px
+  }
+  // .about-head > p {
+  //   margin-bottom: 4rem;
+  // }
   height:100vh;
   display:flex;
   flex-direction:row;
@@ -192,28 +224,16 @@ const Left = styled.div`
     // }
     margin:0px;
   }
-  width:50wv;
+  width:40vw;
   display:flex;
   flex-direction:column;
-  margin-top:auto;
-  margin-bottom:auto;
   margin-left:3pc;
   align-items:flex-start;
-  padding-right:3pc;
-  padding-top:7pc;
-  .question{
-    align-self:flex-start;
-    font-weight:bold;
-    font-size:24px;
-    margin-bottom:1pc;
-  }
-  .answer{
-    margin-bottom:2pc;
-    margin-right:3pc;
-  }
+  justify-content:center;
   img{
     width:30vw;
-    height:43vh;
+    height:40vh;
+    margin-bottom: 10px;
   }
 `;
 const Right = styled.div`
@@ -222,11 +242,11 @@ const Right = styled.div`
       display:none;
     }
   }
-  width:50vw;
+  width:30vw;
   display:flex;
   flex-direction:column;
   align-items:center;
-  justify-content:flex-start;
+  justify-content:center;
   margin-right:4pc;
   img{
     margin-top:3pc;
@@ -270,6 +290,7 @@ const Right = styled.div`
     display:flex;
     flex-direction:row;
   }
+  
 `;
 const ImageSlider = styled.div`
   @media (max-width:500px){

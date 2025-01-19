@@ -19,6 +19,16 @@
     margin-top: 30px;
   }
   
+  #logo-img {
+    margin-left : 1.5rem;
+    cursor: pointer;
+    height: 4rem; width: 4rem;
+  }
+
+  #nav-3bar {
+    margin-top: 1rem;
+  }
+
   .overlay a {
     padding: 8px;
     text-decoration: none;

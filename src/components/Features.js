@@ -35,7 +35,7 @@ function Features() {
             <h3>Eco-Friendly</h3>
         </Card>
         <Card>
-            <img src = "https://www.freecodecamp.org/news/content/images/size/w2000/2020/09/wall.png" alt = "image"></img>
+            <img src = "https://cdn.pixabay.com/photo/2013/07/13/11/34/wifi-158401_640.png" alt = "image"></img>
             <h3>Free Wifi</h3>
         </Card>
       </Cards>
@@ -59,6 +59,8 @@ const Body = styled.div`
         width:10vw;
         margin-left:auto;
         margin-right:auto;
+        padding-top:5px;
+        margin-bottom:5px;
         border-radius:1pc;
         color:hsl(9, 100%, 62%);
         background:hsla(9, 100%, 62%, 0.1);
