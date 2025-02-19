@@ -56,7 +56,7 @@ function Home() {
           <span>U</span>
           <span>S</span>
       </div>
-      <img id = "info-res" src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img> 
+      {/* <img id = "info-res" src = "https://5.imimg.com/data5/YC/CL/MY-42504456/recreation-vehicle-500x500.jpg" alt = "caravaan image"></img>  */}
       <Left id='left'>
        
         <div
@@ -192,17 +192,17 @@ h1{
   }
   @media (max-width:500px){
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     overflow-x:hidden;
-    #q1,#ans1,#q2,#ans2{
-      text-align:center;
+    #q1,#ans1,#q2,#ans2,#q3,#ans3{
+      // text-align:center;
       padding:0px;
       margin-left:6vw;
     }
-    h1{
-      display:none;
+    .about-head{
+      display: none;
     }
-    img{
+    h1{
       display:none;
     }
     #info-res{
@@ -212,6 +212,11 @@ h1{
     }
     #bookButtons{
       margin-bottom:20px;
+      background-color:pink;
+      width: 90vw;
+    }
+    #about {
+      display: none;
     }
     // width:80% !important;
     // display:none;
@@ -223,6 +228,8 @@ const Left = styled.div`
     //   display:none;
     // }
     margin:0px;
+    display: none;
+    width: 20vw;
   }
   width:40vw;
   display:flex;
@@ -238,8 +245,24 @@ const Left = styled.div`
 `;
 const Right = styled.div`
   @media (max-width:500px){
-    #q3,#ans3{
-      display:none;
+    // #q3,#ans3{
+    //   display:none;
+    // }
+    width:100vw;
+    .answer {
+      background-color:green;
+      width:90vw;
+    }
+    #knowMore {
+      width: 100vw;
+    }
+    #q1,#q2,#q3{
+      display:flex;
+      width: 100%;
+      flex-direction:column;
+      // align-items:flex-start !important;
+      // justify-content:center !important;
+      margin-left: 10px;
     }
   }
   width:30vw;

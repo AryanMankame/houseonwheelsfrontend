@@ -24,20 +24,20 @@ function Contact() {
                 <img src = "https://cdn-icons-png.flaticon.com/128/1113/1113375.png?ga=GA1.2.58926140.1653147197" alt = "logo"></img>
                 <div style={{marginTop:"10px",fontSize: 24}}>H.O.W</div>
             </div>
-            <div>
+            <div style={{fontSize: 14}}>
                 We Rent a HouseOnWheels which has a load of facilities.You can book one and it wil get dilevered at your desired location.
             </div>
             <div class = "detaildoit" id = "location">
                 <img src = "https://cdn-icons-png.flaticon.com/512/1255/1255406.png" alt = "pin"></img>
-                <div>Mumbai,Maharashtra,India</div>
+                <div style={{fontSize: 16,marginTop:12}}>Mumbai,Maharashtra,India</div>
             </div>
             <div class = "detaildoit" id = "phone">
                 <div>&#128222;</div>
-                <div>+917387159818</div>
+                <div style={{fontSize: 16,marginTop:12}}>+917387159818</div>
             </div>
             <div class = "detaildoit">
                 <img src = "https://cdn-icons-png.flaticon.com/512/732/732200.png" alt='image'></img>
-                <div>aryan672002@gmail.com</div>
+                <div style={{fontSize: 16,marginTop:12}}>aryan672002@gmail.com</div>
             </div>
             <div id = "logos" class = "detaildoit">
                 <img src = "https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt = "linkedin"></img>
