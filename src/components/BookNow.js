@@ -13,7 +13,7 @@ import { CloseButton} from "react-bootstrap";
 import Navbar from "./Navbar";
 let a = 0;
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiYXJ5YW42NzIwMDIiLCJhIjoiY2w2dHF4NThiMWRxcTNmbW1wMjloZHdlcyJ9.qJfe1mlh5Q-ycAw4bQgL-A";
+  "pk.eyJ1IjoiYXJ5YW42NzIwMDIiLCJhIjoiY203ZDFvZ2dyMGw0NTJsc2dvOXYzYWJzbCJ9.eA9gtNcExAktma_O_rsquA";
 export default function BookNow(props) {
   const navigate = useNavigate();
   const mapContainer = useRef(null);

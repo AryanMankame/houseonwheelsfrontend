@@ -191,8 +191,9 @@ h1{
     display:none;
   }
   @media (max-width:500px){
-    display:flex;
-    flex-direction:row;
+    display: none;
+    // display:flex;
+    // flex-direction:row;
     overflow-x:hidden;
     #q1,#ans1,#q2,#ans2,#q3,#ans3{
       // text-align:center;
@@ -327,6 +328,7 @@ const ImageSlider = styled.div`
       }
     }
     overflow-x:hidden;
+    overflow-y:hidden;
     // height:50vh;
   }
   z-index:-1;

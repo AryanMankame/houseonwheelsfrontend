@@ -24,20 +24,20 @@ function Contact() {
                 <img src = "https://cdn-icons-png.flaticon.com/128/1113/1113375.png?ga=GA1.2.58926140.1653147197" alt = "logo"></img>
                 <div style={{marginTop:"10px",fontSize: 24}}>H.O.W</div>
             </div>
-            <div style={{fontSize: 14}}>
+            <div className='first-how-desc'>
                 We Rent a HouseOnWheels which has a load of facilities.You can book one and it wil get dilevered at your desired location.
             </div>
             <div class = "detaildoit" id = "location">
                 <img src = "https://cdn-icons-png.flaticon.com/512/1255/1255406.png" alt = "pin"></img>
-                <div style={{fontSize: 16,marginTop:12}}>Mumbai,Maharashtra,India</div>
+                <div className="f16-m12">Mumbai,Maharashtra,India</div>
             </div>
             <div class = "detaildoit" id = "phone">
                 <div>&#128222;</div>
-                <div style={{fontSize: 16,marginTop:12}}>+917387159818</div>
+                <div className='f16-m12'>+917387159818</div>
             </div>
             <div class = "detaildoit">
                 <img src = "https://cdn-icons-png.flaticon.com/512/732/732200.png" alt='image'></img>
-                <div style={{fontSize: 16,marginTop:12}}>aryan672002@gmail.com</div>
+                <div className='f16-m12'>aryan672002@gmail.com</div>
             </div>
             <div id = "logos" class = "detaildoit">
                 <img src = "https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt = "linkedin"></img>
@@ -89,10 +89,9 @@ const Body = styled.div`
                 transform:translate(-20px,9pc);
                 width:90vw !important;
                 #left{
-                    h2,h4{
-                        font-size:12px !important;
-                    }
-                    margin-left:4vw !important;
+                    font-size:16px;
+                    margin-left:5vw !important;
+
                 }
                 #right{
                     button{
@@ -163,22 +162,12 @@ const Body = styled.div`
         z-index:2;
         height:80vh;
         width:100vw;
-        @media (max-width:500px){
-            font-size:13px;
-            .title{
-                font-size: 20px !important;
-            }
-            #first{
-                width:35vw !important;
-            }
-            #second{
-                margin-left:25vw !important; margin-top:2vh;
-            }
+        .first-how-desc {
+            font-size: 14px;
         }
-        @media (min-width:500px){
-            #lower{
-                padding-left:10vw;
-            }
+        .f16-m12 {
+            font-size: 16px;
+            margin-top: 12px;
         }
         display:flex;
         // padding-left:10vw;
@@ -232,6 +221,37 @@ const Body = styled.div`
                 div{
                     padding:.5pc;
                 }
+            }
+        }
+        @media (max-width:500px){
+            font-size:14px;
+            display:flex;
+            flex-direction : row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0px; margin: 0px;
+            align-items: center;
+            .title{
+                font-size: 20px !important;
+            }
+            #first,#second,#third,#four {
+                width: 40vw;
+                padding: 0px; margin: 10px;
+            }
+            #first {
+                font-size: 12px !important;
+            }
+            .first-how-desc {
+                font-size: 14px;
+            }
+            .f16-m12 {
+                font-size: 12px;
+                margin-top: 12px;
+            }
+        }
+        @media (min-width:500px){
+            #lower{
+                padding-left:10vw;
             }
         }
     }
